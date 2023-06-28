@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="page-header"></header>
+
+    <main id="services">
+      <div class="container">
+        <h1 class="text-center pt-4">
+          <i class="fa fa-signing mx-2"></i>Services
+        </h1>
+        <div class="px-4 py-5 d-md-flex justify-content-center">
+          <div class="card border-0">
+            <img
+              class="card-img-top"
+              src="images/web-design.jpg"
+              alt="Web design"
+            />
+            <div class="card-body align-item">
+              <h4 id="web-design-heading" class="card-title text-center"></h4>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <img
+              class="card-img-top w-90"
+              src="images/front-end-development.jpg"
+              alt="Front-end web development"
+            />
+            <div class="card-body">
+              <h4 id="frontend-heading" class="card-title text-center"></h4>
+            </div>
+          </div>
+
+          <div class="card border-0">
+            <img
+              class="card-img-top"
+              src="images/backend-development.jpg"
+              alt="Back-end development"
+            />
+            <div class="card-body">
+              <h4 id="backend-heading" class="card-title text-center"></h4>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-primary" />
+
+        <div class="pt-2 d-flex justify-content-center">
+          <h5 id="resume-heading"></h5>
+        </div>
+      </div>
+    </main>
+
+    <footer id="page-footer"></footer>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>

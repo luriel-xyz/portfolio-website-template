@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="page-header"></header>
+
+    <main id="about">
+      <div class="container">
+        <h1 class="text-center pt-4">
+          <i class="fa fa-info-circle mx-2"></i>Contact
+        </h1>
+        <form id="contact-form" class="mx-auto w-75 mt-5">
+          <div class="form-row">
+            <div class="form-group col-md-6 mx-auto">
+              <label for="inputName">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6 mx-auto">
+              <label for="number">Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="number"
+                placeholder="Number"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6 mx-auto">
+              <label for="inputEmail4">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group col-md-6 mx-auto">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                cols="30"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="w-75 text-end mt-2">
+            <button id="btn-contact" type="submit" class="btn btn-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer id="page-footer"></footer>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header id="page-header"></header>
+
+    <main id="register">
+      <div class="container">
+        <div
+          class="col-lg-4 col-md-7 col-sm-7 col-xs-12 mx-auto my-5 bg-light py-2 px-3 rounded"
+        >
+          <h1 class="form-title text-center">Register</h1>
+          <p class="text-center pb-3">
+            Create your own account. It's free and only takes a minute.
+          </p>
+          <form>
+            <div class="form-group mb-3">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 pb-1">
+                  <label class="sr-only" for="firstname">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstname"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                  <label class="sr-only" for="lastname">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastname"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label class="sr-only" for="username">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label class="sr-only" for="email">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                minlength="8"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label class="sr-only" for="password">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="confirm-password"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="confirm-password"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="d-flex justify-content-end pt-2">
+              <button type="submit" id="btn-register" class="btn btn-primary">
+                Register
+              </button>
+            </div>
+          </form>
+
+          <p class="text-center pt-4">
+            <small
+              >Already have an account? <a href="login.html">Log in</a></small
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="page-footer"></footer>
+
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
